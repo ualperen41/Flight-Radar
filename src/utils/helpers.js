@@ -1,0 +1,27 @@
+import { divIcon } from "leaflet";
+
+export const getIcon = (direction) => {
+  return divIcon({
+    html: `
+        <div style="transform: rotate(${direction - 45}deg)">
+            <img src="/plane.svg" width="30px" height="30px"/>
+        </div>
+        `,
+    iconSize: [30, 30],
+    className: "marker",
+  });
+};
+
+export const formatDate = (unixTime) => {
+  // değer yoksa null dön
+  if (!unixTime || unixTime === 0) return null;
+
+  // saniye formatindeki veriyi ms formatına çevir
+  const formatted = new Date(unixTime * 1000);
+
+  // kullanıcı dostu formata çevir
+  return formatted.toLocaleTimeString("tr", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
