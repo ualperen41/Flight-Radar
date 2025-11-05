@@ -41,7 +41,7 @@ const Modal = () => {
                   <Time timeData={info.time} />
                 </div>
 
-                <Aircraft AircraftData={info.aircraft} />
+                <Aircraft aircraftData={info.aircraft} />
               </div>
             </div>
           )

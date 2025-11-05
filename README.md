@@ -1,16 +1,54 @@
-# React + Vite
+🛫 Udemig Flight Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React, Vite, ve Leaflet kullanılarak geliştirilmiş gerçek zamanlı bir uçuş takip uygulamasıdır.
+Canlı uçuş verilerini harita üzerinde görselleştirir ve liste olarak da görüntüleme imkanı sunar.
 
-Currently, two official plugins are available:
+🖼️ Ekran Görüntüsü
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](./Flight.gif)
 
-## React Compiler
+🚀 Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Gerçek zamanlı uçuş verilerini harita üzerinde gösterir
 
-## Expanding the ESLint configuration
+Leaflet ile interaktif harita entegrasyonu
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Redux Toolkit ile global state yönetimi
+
+Liste ve harita görünümü arasında geçiş
+
+Toplam uçuş sayısını görüntüleme
+
+Hızlı geliştirme için Vite yapılandırması
+
+🧩 Kullanılan Teknolojiler
+
+⚛️ React-Arayüz geliştirme
+
+⚡ Vite-Hızlı geliştirme ortamı
+
+🗺️ Leaflet-Harita kütüphanesi
+
+🧠 Redux Toolkit-State yönetimi
+
+📦 Axios-API istekleri
+
+💅 TailwindCSS (isteğe bağlı)-Stil yönetimi
+
+📦 Kurulum
+
+# Depoyu klonla
+
+git clone https://github.com/kullaniciadi/flight-radar.git
+
+# Proje klasörüne gir
+
+cd flight-radar
+
+# Bağımlılıkları yükle
+
+npm install
+
+# Geliştirme sunucusunu başlat
+
+npm run dev

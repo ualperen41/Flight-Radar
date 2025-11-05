@@ -7,18 +7,18 @@ const Aircraft = ({ aircraftData }) => {
       <div className="aircraft-icon">
         <Plane />
       </div>
-      <div>
+      <div className="aircraft-info">
         <p>
           <span className="title">Uçak Tipi</span>
           <span>{c(aircraftData?.model?.text)}</span>
         </p>
         <div>
-          <p className="title">
-            <span>Kuyruk Kodu</span>
+          <p>
+            <span className="title">Kuyruk Kodu</span>
             <span>{c(aircraftData?.registration)}</span>
           </p>
-          <p className="title">
-            <span>Ülke ID</span>
+          <p>
+            <span className="title">Ülke ID</span>
             <span>{c(aircraftData?.countryId)}</span>
           </p>
         </div>

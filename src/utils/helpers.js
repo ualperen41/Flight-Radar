@@ -1,6 +1,6 @@
 import { divIcon } from "leaflet";
 
-export const getIcon = (direction) => {
+export const getIcon = (direction, isActive, isDetailMode) => {
   return divIcon({
     html: `
         <div style="transform: rotate(${direction - 45}deg)">
@@ -8,7 +8,9 @@ export const getIcon = (direction) => {
         </div>
         `,
     iconSize: [30, 30],
-    className: "marker",
+    className: `marker ${isDetailMode && "passive-flight"} ${
+      isActive && "active-flight"
+    }`,
   });
 };
 
